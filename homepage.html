@@ -4,7 +4,94 @@
     <meta charset="UTF-8" />
     <title>Home</title>
 </head>
+<style>
+    button {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .profilearea {
+        align-items: center; 
+        display : flex;
+        margin-left : 100px;
+    }
+    body {
+        margin: 0;
+        background-color: white;
+        background-image: url("asset/background home.svg");
+    }
+    .title_desc {
+        height: 300px;
+        
+    }
+    .footer {
+        background-color: rgba(229, 225, 218, 1);
+        padding: 20px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        
+    }
+    .detail_section {
+        display : flex;
+        background-image: url("asset/backdrop.svg");
+        height: fill;
+        
+    }
+</style>
 <body>
-    <img src = "asset/logo ruangbinus.svg" alt="My Happy SVG"/>
+    <div class="navbar", style="display : flex; align-items: center;">
+        <img src = "asset/logo ruangbinus.svg", style="width: 15%; height: auto"/>
+        <button>Home</button>
+        <button>Forum</button>
+        <button>Material</button>
+        <button>Video Learning</button>
+        <button>Exercise</button>
+        <div class="profilearea">
+            <img src="asset/profile.svg">
+            <text style="margin-left : 10px">Full Name - B27</text>
+        </div>
+    </div>
+    <div class="title_desc">
+        <h1>Introduction</h1>
+        <p>RuangBinus is an innovative platform designed specifically for students to access and learn course materials effectively.</p>
+        <p>With various features provided, RuangBinus allows students to access lecture materials online, whether in text, video, or audio format. </p>
+        <p>Additionally, the platform offers a variety of learning aids such as interactive quizzes, discussion forums, and additional tutorials, which can help students better understand the material.</p> 
+        <p>With the convenience of access and flexibility offered, RuangBinus serves as a valuable tool for students to enhance their understanding of course materials.</p>
+    </div>
+    <div class="detail_section">
+        <div class= "profilearea" style="display : flex">
+            <img src="asset/profile.svg" style="height : 150px">
+            <div style = "display : grid; margin-left: 30px">
+                <h2>Full Name</h2>
+                <text>Binusian 202*</text>
+                <text>268762832</text>
+                <text>_______________________________</text> 
+            </div>
+        </div>
+        <div style = "display : grid;">
+            <div style = "display : grid; margin-left: 30px; background-color: cyan; margin : 10px ; padding: 10px; margin-left : 400px">
+                <h2>Your last Exam Score</h2>
+                <text>Semester 1:</text>
+                <h2>3.59</h2>
+                
+            </div>
+            <div style = "display : grid; margin-left: 30px; background-color: cyan; margin : 10px ; padding: 10px; margin-left : 400px">
+                <h2>Upcoming class</h2>
+                <text>Sunday, 17 March 2024</text>
+                <div style = "display : flex">
+                    <text>Major</text>
+                    <text style="margin-left: 20px; margin-right : 20px">|</text>
+                    <text>1001</text>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div style = "display : grid">
+            <text>RuangBinus</text>
+            <text>Bina Nusantara University</text>
+        </div>
+    </div>
 </body>
 </html>
