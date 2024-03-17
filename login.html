@@ -3,8 +3,64 @@
 <head>
     <meta charset="UTF-8" />
     <title>Login page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(./asset/bg_login.png);
+            background-size: cover;
+        }
+
+        h1 {
+            margin-top: 200px;
+            text-align: left;
+            margin-left: 200px;
+            color: black;
+        }
+
+        form {
+            width: 300px;
+            margin-left: 150px;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: right;
+        }
+
+        label[for="forgotpass"] {
+            margin-left: 100px;
+            text-align: right;
+            color: #00B3FF;
+            cursor: pointer;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 150%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            width: 157%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }    </style>
 </head>
 <body>
-    
+    <h1>Welcome To RuangBinus!</h1>
+    <form>
+        <input type="text" id="nim" name="nim"><br>
+        <input type="password" id="pass" name="pass"><br>
+        <label for="forgotpass">Forgot password?</label><br><br>
+        <input type="submit" value="Login">
+    </form>
 </body>
 </html>
